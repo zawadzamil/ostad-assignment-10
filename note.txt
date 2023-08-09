@@ -1,0 +1,39 @@
+./app:
+The new app directory works alongside the pages directory to support incremental adoption and provide other new features like server-side rendering and static-site generation.
+ Routing with the app directory is controlled via the folders inside of it. The UI for a particular route is defined by a page.jsx file inside of the folder.
+
+ ./public:
+Next.js can serve static files, like images, under a folder called public in the root directory. Files inside public can then be referenced by my code starting from the base URL (/).
+
+.gitignore: 
+This file specifies files and directories that should be ignored by Git version control.
+
+README.md: 
+This is a Markdown file containing information about my project
+
+node_modules/: 
+This directory contains the installed Node.js packages and dependencies for my project. It's managed by npm.
+
+package.json: 
+This file holds project metadata and lists the project's dependencies, scripts, and more
+
+next.config.js:
+The next.config.js file is a critical file for nextjs. We can configure lots of stuff with the next.config.js file like 
+Environment variables
+Base path
+Rewrites
+Redirects
+Custom Header etc and lot more..
+
+jsconfig.json:
+The jsconfig.json file lets us specify a base directory for a project.
+
+./components:  This is where we can place reusable React components that are used across different pages.
+
+layout.js: A layout is UI that is shared between routes.
+
+page.js:
+A page is UI that is unique to a route.
+
+loading.js:
+A loading file can create instant loading states built on Suspense
